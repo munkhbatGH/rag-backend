@@ -17,6 +17,13 @@ or
 
 ## DEV
 
+- windows
+  -> python -m venv env
+  -> .\env\Scripts\activate
+- macos
+  -> python3 -m venv venv
+  -> source ./venv/bin/activate
+
 - uvicorn main-single:app --reload
 
 - Эхлээд доорх кодыг ажиллуулж text-г vector болгон хувиргаж байгаа
