@@ -115,28 +115,6 @@ class TokenResponse(BaseModel):
     access_token: str
     token_type: str = "Bearer"
 
-# # --- JWT Authentication Simulation Dependency ---
-# def get_current_user_id(authorization: Annotated[str, Header(description="Bearer <JWT token>")]):
-#     """
-#     Simulates JWT validation by expecting an 'Authorization: Bearer <user_id>' header.
-#     In a production app, this would verify the JWT signature and decode the payload.
-#     """
-#     if not authorization or not authorization.startswith("Bearer "):
-#         raise HTTPException(
-#             status_code=status.HTTP_401_UNAUTHORIZED,
-#             detail="Not authenticated: Missing or invalid Authorization header.",
-#             headers={"WWW-Authenticate": "Bearer"},
-#         )
-    
-#     # We simulate extracting the user_id from the token
-#     # Example: If header is "Bearer user123", user_id is "user123"
-#     simulated_user_id = authorization.split(" ")[1].strip()
-    
-#     if not simulated_user_id:
-#         raise HTTPException(status_code=400, detail="Invalid token format.")
-    
-#     return simulated_user_id
-
 # --- Request Body Schema for the Query Endpoint ---
 class QueryModel(BaseModel):
     query: str

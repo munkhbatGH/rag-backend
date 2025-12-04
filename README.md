@@ -9,6 +9,11 @@
 
     pip install sqlalchemy httpx --break-system-packages
 ```
+or
+```sh
+  pip install -r requirements.txt
+
+```
 
 ## DEV
 
