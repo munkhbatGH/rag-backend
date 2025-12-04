@@ -12,7 +12,7 @@
 
 ## DEV
 
-- uvicorn main:app --reload
+- uvicorn main-single:app --reload
 
 - Эхлээд доорх кодыг ажиллуулж text-г vector болгон хувиргаж байгаа
 ```sh
