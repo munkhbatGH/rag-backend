@@ -5,9 +5,7 @@
     pip install langchain-community --break-system-packages # Contains Chroma and other community integrations
     pip install langchain-openai --break-system-packages # Contains OpenAI models and embeddings
     pip install chromadb --break-system-packages # The underlying database library
-    pip install pypdf fastapi uvicorn --break-system-packages
-
-    pip install sqlalchemy httpx --break-system-packages
+    pip install pypdf fastapi uvicorn sqlalchemy httpx python-jose langchain-text-splitters --break-system-packages
 ```
 or
 ```sh
